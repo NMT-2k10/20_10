@@ -1,0 +1,221 @@
+{
+  "herName": "em yêu",
+  "signature": "Tuấn",
+  "palette": "pink",
+  "music": {
+    "intro": "/music/intro.m4a",
+    "loop": "/music/loop.m4a",
+    "galaxy": "/music/Cô gái m52 ‣ HuyR ft. Tùng Viu PROD BY DANNY E.B 「Lyric Video」 Meens.mp3"
+  },
+  "cover": {
+    "greeting": "Gửi em,",
+    "line": "người yêu của anh",
+    "button": "Chạm để mở quà"
+  },
+  "garden": {
+    "big": "20 · 10",
+    "line": "Giữa cả một rừng hoa, em vẫn là đoá hoa đẹp nhất",
+    "photo": "/image/94996287630f4b50858c33b27a274f93.webp",
+    "focus": "50% 50%"
+  },
+  "chapters": [
+    {
+      "sprig": "Những bông này, cho nụ cười của em",
+      "photos": [
+        {
+          "src": "/image/94996287630f4b50858c33b27a274f93.webp",
+          "wish": "Chúc em ngày nào cũng cười thật tươi như thế này."
+        },
+        {
+          "src": "/image/IMG_20260921_205347_246.jpg"
+        },
+        {
+          "src": "/image/d8cdb947343242bf80ec725ecb33be04.webp"
+        },
+        {
+          "src": "/image/a9e14a1420d74b0b8ae540a1e4007a63.webp"
+        }
+      ]
+    },
+    {
+      "sprig": "Những bông hoa này, cho người con gái mạnh mẽ, mệt mà chẳng nói",
+      "photos": [
+        {
+          "src": "/image/2c283a439b1849b8a7c6234d72bd5638.webp"
+        },
+        {
+          "src": "/image/7dee9fef69df4042a1a67f4085b2cf6d.webp"
+        },
+        {
+          "src": "/image/fce452a1e52740fda3f67120a4b13bf5.webp"
+        },
+        {
+          "src": "/image/1a20dca5c2964d07b3d2f46bf1bfad48.webp"
+        }
+      ]
+    },
+    {
+      "sprig": "Và những bông này, cho những ngày bình yên của em",
+      "photos": [
+        {
+          "src": "/image/79e2640c865a4f989dca71efc827bc32.webp"
+        },
+        {
+          "src": "/image/IMG_20260731_005918.jpg"
+        },
+        {
+          "src": "/image/0dd1a2ffa0e84134ad5ae733cb2179b0.webp"
+        },
+        {
+          "src": "/image/Messenger_creation_12C16C92-C671-4E90-A438-B6CC2F5F0CA5.jpeg",
+          "wish": "Chúc em luôn khoẻ mạnh, bình an và được yêu thương thật nhiều."
+        }
+      ]
+    }
+  ],
+  "bouquet": {
+    "intro": "Anh gói tặng em một bó hoa…",
+    "more": "",
+    "tag": "Gửi em, 20.10",
+    "line": "Hoa ngoài tiệm sẽ héo. Bó này, anh giữ cho em mãi."
+  },
+  "letter": {
+    "prompt": "Còn một điều anh muốn nói…",
+    "greeting": "Gửi bạn đời,",
+    "paragraphs": [
+      "Chúc em một ngày 20/10 thật hạnh phúc, có nhiều niềm vui và gặp được những điều may mắn. Anh mong thế giới này sẽ đối xử nhẹ nhàng với em thêm một chút, mong em được gia đình yêu thương và thấu hiểu nhiều hơn, để em không còn phải buồn hay mệt mỏi vì những chuyện khiến em buồn lòng.",
+      "Vì ở xa nên anh không thể tự tay trao quà hay ở cạnh em trong ngày này. Nhưng anh sẽ không để em phải chịu thiệt thòi. Tuy món quà không có gì là lớn lao, nhưng anh mong món quà nhỏ này sẽ làm em vui vẻ và hạnh phúc hơn.",
+      "Cảm ơn em đã đến bên anh và luôn ở cạnh anh để cùng anh vượt qua mọi chuyện. Gặp được em có lẽ là điều may mắn nhất cuộc đời anh. Có nhiều lúc anh còn vụng về, chưa biết nói làm sao hay làm gì để em thấy được hết tình cảm của mình, nhưng anh rất yêu và trân trọng em. Những điều em chia sẻ, dù nhỏ thôi, anh cũng muốn được lắng nghe. Những lúc mệt mỏi, em cũng đừng cố chịu đựng mọi chuyện nhé, em còn có anh mà.",
+      "Anh mong sau này ta vẫn còn ở bên nhau, vẫn muốn kể cho nhau nghe một ngày đã trôi qua thế nào, vẫn quan tâm và cùng nhau giải quyết mỗi khi có chuyện không vui. Anh không hứa những gì lớn lao. Anh chỉ hứa sẽ ở bên cạnh em bây giờ và hết quãng đường về sau.",
+      "Cảm ơn em, cô gái anh thương."
+    ],
+    "closing": "Anh yêu em.",
+    "photo": "/image/IMG_20260911_182245_859_edit_10790.jpg",
+    "stamp": "/image/IMG_20260911_182245_859_edit_10790.jpg",
+    "postmark": "20.10.2026"
+  },
+  "ending": {
+    "line": "Hoa ngoài kia sẽ héo. Còn em, anh sẽ tưới mỗi ngày.",
+    "photo": "/image/595a6e254ae7418b9e312938f1314b4a.webp",
+    "title": "yêu em",
+    "focus": "50% 0%"
+  },
+  "galaxy": {
+    "photos": [
+      {
+        "src": "/image/013bc47800df476ea76c1f90412dd364.webp"
+      },
+      {
+        "src": "/image/026b9460b3ec4d94a58fdd3e87b27a57.webp"
+      },
+      {
+        "src": "/image/0dd1a2ffa0e84134ad5ae733cb2179b0.webp"
+      },
+      {
+        "src": "/image/1a20dca5c2964d07b3d2f46bf1bfad48.webp"
+      },
+      {
+        "src": "/image/29e574afda1246e9b4547c945c7d4ab9.webp"
+      },
+      {
+        "src": "/image/2a0ff5e5a87e486087e0d79a7d4c8a2c.webp"
+      },
+      {
+        "src": "/image/2c283a439b1849b8a7c6234d72bd5638.webp"
+      },
+      {
+        "src": "/image/30e5a53a1c6a45198d990219a8e2ffb0.webp"
+      },
+      {
+        "src": "/image/39028bd119664fa1800c3b08f2ab3447.webp"
+      },
+      {
+        "src": "/image/3bfb005f44334b639de0aad16219411e.webp"
+      },
+      {
+        "src": "/image/3d866cce55904b23bcbb712fbe680280.webp"
+      },
+      {
+        "src": "/image/595a6e254ae7418b9e312938f1314b4a.webp"
+      },
+      {
+        "src": "/image/5e55e6467ccb441f86720eab8d1d7a09.webp"
+      },
+      {
+        "src": "/image/665679e4fbe8434c82cc617f981f9a63.webp"
+      },
+      {
+        "src": "/image/7713207e62db4f4ab80dd6e627ce7ecd.webp"
+      },
+      {
+        "src": "/image/777fa10819de4d19812eeed0cc49996c.webp"
+      },
+      {
+        "src": "/image/79e2640c865a4f989dca71efc827bc32.webp"
+      },
+      {
+        "src": "/image/7dee9fef69df4042a1a67f4085b2cf6d.webp"
+      },
+      {
+        "src": "/image/85638d7d87af424fab9720250e92678f.webp"
+      },
+      {
+        "src": "/image/94996287630f4b50858c33b27a274f93.webp"
+      },
+      {
+        "src": "/image/IMG_20260731_005904.jpg"
+      },
+      {
+        "src": "/image/IMG_20260731_005918.jpg"
+      },
+      {
+        "src": "/image/IMG_20260820_145506.jpg"
+      },
+      {
+        "src": "/image/IMG_20260911_182245_859_edit_10790.jpg"
+      },
+      {
+        "src": "/image/IMG_20260921_205347_246.jpg"
+      },
+      {
+        "src": "/image/Messenger_creation_12C16C92-C671-4E90-A438-B6CC2F5F0CA5.jpeg"
+      },
+      {
+        "src": "/image/Messenger_creation_2856878D-12A9-4B0F-ADA6-A8AF470D6B94.jpeg"
+      },
+      {
+        "src": "/image/Messenger_creation_518BF6A9-E3F7-432C-9E2E-FFA970077957.jpeg"
+      },
+      {
+        "src": "/image/Messenger_creation_69BECB83-AD33-4BC4-A942-D2917D345244_edit_43968.jpeg"
+      },
+      {
+        "src": "/image/Messenger_creation_7110FE71-B950-417D-B516-474FFE6E4799.jpeg"
+      },
+      {
+        "src": "/image/Messenger_creation_9DE510E3-7145-44AE-98DC-A16DF7DACFA1.jpeg"
+      },
+      {
+        "src": "/image/a9e14a1420d74b0b8ae540a1e4007a63.webp"
+      },
+      {
+        "src": "/image/aa5d1edddb774605b45ee31d05ae304f.webp"
+      },
+      {
+        "src": "/image/b16105fdd39d425e81d6b8299b328006.webp"
+      },
+      {
+        "src": "/image/cba13c1faadb466eb1241e2e99058f4c.webp"
+      },
+      {
+        "src": "/image/d8cdb947343242bf80ec725ecb33be04.webp"
+      },
+      {
+        "src": "/image/da333f825ce440a180633aa107980d7a.webp"
+      },
+      {
+        "src": "/image/fce452a1e52740fda3f67120a4b13bf5.webp"
+      }
+    ]
+  }
+}

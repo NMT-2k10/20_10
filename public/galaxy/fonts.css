@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Mali';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/galaxy/fonts/galaxy-font-0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/galaxy/fonts/galaxy-font-1.ttf) format('truetype');
+}

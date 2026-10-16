@@ -1,0 +1,9 @@
+node_modules/
+dist/
+backups/
+previews/
+/image/
+*.code-workspace
+.env
+.env.*
+*.log

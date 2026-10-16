@@ -1,0 +1,16 @@
+import { mkdirSync, cpSync, writeFileSync, copyFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { root } from '../src/paths.mjs';
+import { renderPage } from '../src/page.mjs';
+import { editable } from '../src/editable.mjs';
+import { prefixPagesPaths } from './pages-paths.mjs';
+const dist=resolve(root,'dist');
+mkdirSync(dist,{recursive:true});
+cpSync(resolve(root,'public'),dist,{recursive:true});
+for(const [url,source] of Object.entries(editable)) copyFileSync(resolve(root,source),resolve(dist,'.'+url));
+copyFileSync(resolve(root,'custom.css'),resolve(dist,'custom.css'));
+writeFileSync(resolve(dist,'index.html'),renderPage(),'utf8');
+const baseArgument = process.argv.find(value => value.startsWith('--base='));
+prefixPagesPaths(dist, baseArgument?.slice(7));
+writeFileSync(resolve(dist,'.nojekyll'),'');
+console.log('Built dist/ with local JavaScript, photos, fonts and audio.');

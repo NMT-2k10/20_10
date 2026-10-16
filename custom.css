@@ -1,0 +1,187 @@
+/* Botanical finish. All decorative layers leave clicks and content accessible. */
+:root {
+  --petal-ivory: #fff8ed;
+  --rose-ink: #73364b;
+  --botanical-shadow: rgba(53, 66, 40, .2);
+}
+.gift-experience { isolation: isolate; }
+.gift-experience::before,
+.gift-experience::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+/* Afternoon light, with the softer shadows of stems beside a window. */
+.gift-experience::before {
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 20% 8%, #fffdf3a6, transparent 52%),
+    linear-gradient(118deg, transparent 42%, #bda68a0d 43%, transparent 49%, #bda68a12 50%, transparent 57%);
+}
+.gift-experience::after {
+  z-index: 70;
+  opacity: .075;
+  background: url('/gift/details/paper-grain.svg') repeat;
+  mix-blend-mode: multiply;
+}
+.gift-experience[data-scene="cover"]::before,
+.gift-experience[data-scene="garden"]::before { opacity: .28; }
+.gift-experience[data-scene="cover"]::after,
+.gift-experience[data-scene="garden"]::after { opacity: .035; mix-blend-mode: screen; }
+.gift-experience[data-scene="bouquet"] {
+  background:
+    radial-gradient(ellipse at 32% 12%, #fffdf8 0%, #fff9ed90 35%, transparent 66%),
+    radial-gradient(ellipse at 7% 85%, #c1c8ad40, transparent 43%),
+    linear-gradient(135deg, #f6efe3, #f6e4da 70%, #e6d5c4) !important;
+}
+.gift-cover { overflow: hidden; }
+.botanical-cover-art { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.cover-halo {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 42%, #bb748b28, transparent 52%),
+    radial-gradient(ellipse at 0% 100%, #9a946136, transparent 42%),
+    linear-gradient(118deg, #f7cfa60c, transparent 38%, #090c091f);
+}
+.cover-oval {
+  position: absolute;
+  width: min(76vw, 620px);
+  height: min(76vh, 740px);
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #e3bf9c30;
+  border-radius: 50% 50% 46% 46%;
+  box-shadow: 0 0 0 12px #e3bf9c05, inset 0 0 80px #e3bf9c04;
+}
+.cover-sprig, .cover-bloom {
+  position: absolute;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(5px 12px 10px #100b0a66);
+  animation: botanical-arrive 2.6s ease-out both;
+}
+.cover-sprig { width: clamp(230px, 36vw, 540px); opacity: .65; }
+.cover-sprig-left { left: -8%; bottom: -13%; transform: rotate(24deg); }
+.cover-sprig-right { right: -9%; top: -14%; transform: rotate(195deg); opacity: .42; }
+.cover-bloom-left { width: clamp(120px, 20vw, 290px); left: -3%; bottom: 9%; transform: rotate(-24deg); }
+.cover-bloom-right { width: clamp(115px, 17vw, 250px); right: -3%; top: 8%; transform: rotate(18deg); opacity: .8; }
+.cover-bloom-small { width: clamp(70px, 10vw, 150px); left: 15%; bottom: -5%; transform: rotate(32deg); opacity: .72; }
+.gift-cover > p { text-shadow: 0 3px 22px #160d1670; }
+.gift-cover > button {
+  background: linear-gradient(135deg, #f7ddc52b, #deb6be16);
+  border-color: #efd5bb80;
+  box-shadow: 0 8px 32px #160d1633, inset 0 1px 0 #fff5df29 !important;
+  transition: background .25s, border-color .25s;
+}
+.gift-cover > button:hover { background-color: #f7ddc52b; border-color: #f6ddc4; }
+button:focus-visible { outline: 2px solid #be8c60; outline-offset: 5px; }
+.botanical-bloom { image-rendering: auto; }
+.botanical-foliage {
+  width: 125%; max-width: none; margin-left: -12.5%;
+  filter: drop-shadow(2px 5px 3px var(--botanical-shadow));
+}
+.bouquet-arrangement { isolation: isolate; }
+.bouquet-arrangement::after {
+  content: ""; position: absolute; pointer-events: none;
+  left: 12%; top: 98%; width: 76%; height: 5%;
+  background: radial-gradient(ellipse, #70513b30, transparent 68%);
+  filter: blur(9px); transform: rotate(-6deg); z-index: -1;
+}
+.bouquet-paper-details { filter: drop-shadow(1px 2px 1px #68452d14); }
+.gift-bouquet[data-wrapped="true"] .bouquet-arrangement > svg { filter: drop-shadow(2px 5px 4px #5b3b2912); }
+.garden-flower-head { filter: drop-shadow(1px 2px 1px #2b1d2329) drop-shadow(3px 6px 5px #2b1d231a) !important; }
+@keyframes botanical-arrive { from { opacity: 0; } }
+@media (max-width: 600px) {
+  .cover-oval { width: 85vw; height: 65vh; }
+  .cover-sprig-left { left: -28%; bottom: -5%; opacity: .55; }
+  .cover-sprig-right { right: -28%; top: -8%; opacity: .4; }
+  .cover-bloom-left { left: -9%; bottom: 12%; width: 32vw; }
+  .cover-bloom-right { right: -8%; top: 12%; width: 31vw; }
+  .cover-bloom-small { left: 20%; bottom: -2%; width: 22vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cover-sprig, .cover-bloom { animation: none; }
+}
+@media (orientation: landscape) and (max-height: 600px) {
+  .gift-bouquet[data-wrapped="true"] .bouquet-caption {
+    left: 55%; right: 6%; top: 30%; bottom: auto;
+    min-height: 0; padding: 0;
+  }
+  .gift-bouquet[data-wrapped="true"] .bouquet-caption p {
+    font-size: clamp(1.15rem, 3vw, 1.7rem);
+    line-height: 1.55;
+  }
+}
+/* Florist wrapping: stitched paper edges, satin folds and a tied paper tag. */
+.bouquet-satin-ribbon { user-select: none; }
+.bouquet-tag-cord {
+  display: block; overflow: visible;
+  margin-bottom: calc(var(--tag-size) * -.024);
+}
+.bouquet-tag-card {
+  position: relative;
+  border-radius: 2px 5px 3px 2px;
+  background-image: url('/gift/details/tag-sprig.svg'), url('/gift/details/paper-grain.svg'), linear-gradient(150deg, #fffcf5, #f2e5d2);
+  background-size: auto 62%, 110px 110px, auto;
+  background-position: right 5px center, center, center;
+  background-repeat: no-repeat, repeat, no-repeat;
+}
+.bouquet-tag-card::before {
+  content: ""; position: absolute; inset: 4px;
+  border: 1px solid #b398633d;
+  border-radius: 1px 3px 2px 1px;
+  pointer-events: none;
+}
+.bouquet-tag-card::after {
+  content: ""; position: absolute;
+  left: calc(var(--tag-size) * .019);
+  top: calc(var(--tag-size) * .012);
+  width: calc(var(--tag-size) * .014);
+  height: calc(var(--tag-size) * .014);
+  border-radius: 50%; background: #74563d;
+  border: 1px solid #d5ba81;
+  box-shadow: inset 1px 1px 1px #39291f80, 0 1px 0 #fffcf1;
+}
+.gift-galaxy-frame { display: block; position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #000010; }
+.gift-experience[data-scene="galaxy"]::before,
+.gift-experience[data-scene="galaxy"]::after { display: none; }
+
+/* Comfortable reading on the keepsake letter. */
+.gift-letter-paper { max-width: 600px; }
+.gift-letter-scroll {
+  min-height: 0;
+  padding: clamp(28px, 5vh, 44px) clamp(24px, 7vw, 52px) 28px;
+  scrollbar-width: thin;
+  scrollbar-color: #b47e8e70 transparent;
+  overscroll-behavior: contain;
+  scroll-padding-block: 24px;
+  cursor: auto;
+  user-select: text;
+}
+.gift-letter-photo { width: 40%; max-width: 174px; margin-bottom: 28px; }
+.gift-letter-greeting {
+  margin: 0 0 22px;
+  font-size: clamp(36px, 8vw, 48px);
+  line-height: 1.25;
+  color: #922b48;
+}
+.gift-letter-paragraph {
+  margin: 0 0 1.15em;
+  font-size: clamp(18px, 4.6vw, 20px);
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+.gift-letter-paragraph:last-of-type { margin-top: 1.5em; color: #922b48; }
+.gift-letter-closing {
+  font-size: clamp(23px, 5.6vw, 28px);
+  font-style: italic;
+  color: #922b48;
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .gift-letter-photo { max-width: 120px; }
+  .gift-letter-scroll { padding-top: 24px; }
+}

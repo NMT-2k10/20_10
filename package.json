@@ -1,0 +1,12 @@
+{
+  "name": "flower-garden-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local editable front end based on the public reference page",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node tools/build.mjs",
+    "download": "node tools/download-assets.mjs"
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+ <meta name="theme-color" content="#000010">
+ <title>Ngân hà của chúng mình</title>
+ <link rel="stylesheet" href="/galaxy/galaxy.css">
+</head>
+<body>
+ <div id="galaxy-loading" role="status">Đang mở ngân hà…</div>
+ <nav class="galaxy-actions" aria-label="Ngân hà ảnh">
+  <button id="galaxy-back" type="button">‹ Quay lại</button>
+ </nav>
+ <div class="galaxy-bottom-actions">
+  <button id="gallery-open" type="button" aria-label="Xem bộ ảnh">Ảnh</button>
+  <button id="view-reset" type="button" aria-label="Góc nhìn ban đầu" title="Góc nhìn ban đầu">↺</button>
+ </div>
+ <dialog id="photo-viewer" aria-label="Xem ảnh kỷ niệm">
+  <section class="viewer-panel">
+   <header class="viewer-toolbar">
+    <span id="viewer-count" aria-live="polite"></span>
+    <button id="viewer-close" type="button" aria-label="Đóng ảnh" autofocus>×</button>
+   </header>
+   <div class="viewer-picture"><img id="viewer-image" alt="Ảnh kỷ niệm" draggable="false"></div>
+   <p id="viewer-caption"></p>
+   <footer class="viewer-navigation">
+    <button id="viewer-prev" type="button" aria-label="Ảnh trước">‹</button>
+    <button id="viewer-next" type="button" aria-label="Ảnh tiếp theo">›</button>
+   </footer>
+  </section>
+ </dialog>
+ <script type="module" src="/galaxy/boot.js"></script>
+</body>
+</html>

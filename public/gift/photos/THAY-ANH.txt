@@ -1,0 +1,3 @@
+Dat anh moi o day: p01.jpg den p12.jpg.
+Tat ca 12 anh goc da co san. Ghi de bang anh cua ban de thay anh.
+Ban cung co the dung ten khac va sua duong dan trong gift.json.
